@@ -6,6 +6,9 @@
 docs/site/*
 docs/sources/*
 
+# data
+data/*
+
 # test-related
 .coverage
 .cache

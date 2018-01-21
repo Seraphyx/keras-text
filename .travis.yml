@@ -45,6 +45,12 @@ install:
   # Install package and test requirements.
   - pip install -e .[tests]
 
+  # Install h5 dependencies
+  - pip install tables
+
+  # Install missing dependencies
+  - pip install joblib jsonpickle
+
 script:
   - export MKL_THREADING_LAYER="GNU"
   # run keras backend init to initialize backend config
